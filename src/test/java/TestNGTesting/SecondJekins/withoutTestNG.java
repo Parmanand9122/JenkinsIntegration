@@ -9,6 +9,8 @@ public class withoutTestNG {
 		System.setProperty("webdriver.chrome.driver", "E:\\Eclipse\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.navigate().to("https://github.com/");
+		String geturlgit=driver.getTitle();
+		System.out.println("Current url is:"+geturlgit);
 		driver.quit();
 
 	}
